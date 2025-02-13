@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatting Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 50px auto; }
+        .login, .chat { display: none; }
+        .user-list, .message-list { height: 300px; overflow-y: scroll; border: 1px solid #ccc; margin-bottom: 10px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chatting Website</h1>
+        
+        <div class="login">
+            <input type="text" id="username" placeholder="Enter username" />
+            <button onclick="login()">Login</button>
+        </div>
+        
+        <div class="chat">
+            <div class="user-list" id="userList"></div>
+            <div class="message-list" id="messageList"></div>
+            <input type="text" id="messageInput" placeholder="Type a message" />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
